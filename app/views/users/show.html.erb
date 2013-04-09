@@ -1,0 +1,7 @@
+<h1>Friends</h1>
+<% current_user.friends_on_app.each do |friend| %>
+<div>
+	<p><%= image_tag friend['pic_square'] %></p>
+	<p><%= friend['name'] %></p>
+</div>
+<% end %>
