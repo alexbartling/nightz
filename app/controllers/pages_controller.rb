@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+  	@locations = Location.all
   end
 
   def contact

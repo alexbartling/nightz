@@ -1,0 +1,22 @@
+<h1>Locations#new</h1>
+<%= form_for @location do |f| %>
+  <div><%= f.label :name, "Name" %>
+    <%= f.text_field :name %></div>
+<div> <%= f.label :number, "Phone Number" %>
+  <%= f.text_field :number %></div>
+    <div><%= f.label :monday, "Monday" %>
+    <%= f.text_field :monday %></div>
+    <div><%= f.label :tuesday, "tuesday" %>
+    <%= f.text_field :tuesday %></div>
+    <div><%= f.label :wednesday, "Wednesday" %>
+    <%= f.text_field :wednesday %></div>
+    <div><%= f.label :thursday, "Thursday" %>
+    <%= f.text_field :thursday %></div>
+    <div><%= f.label :friday, "Friday" %>
+    <%= f.text_field :friday %></div>
+    <div><%= f.label :saturday, "saturday" %>
+    <%= f.text_field :saturday %></div>
+      <div><%= f.label :sunday, "Sunday" %>
+    <%= f.text_field :sunday %></div>
+    <%= f.submit "Submit"%>
+<% end %>

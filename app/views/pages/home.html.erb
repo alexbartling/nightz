@@ -1,2 +1,21 @@
 <h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+	<div>
+	<% @locations.each do |location| %>
+		<p><b><%= location.name %></b></p>
+		<% if Date.today.wday == 0 %>
+		<p><%= location.sunday %></p>
+		<% elsif Date.today.wday == 1 %>
+			<p><%= location.monday %></p>
+		<% elsif Date.today.wday == 2 %>
+			<p><%= location.tuesday %></p>
+		<% elsif Date.today.wday == 3 %>
+			<p><%= location.wednesday %></p>
+		<% elsif Date.today.wday == 4 %>
+			<p><%= location.thursday %></p>
+		<% elsif Date.today.wday == 5 %>
+			<p><%= location.friday %></p>
+		<% elsif Date.today.friday == 6 %>
+			<p><%= location.saturday %></p>
+		<% end %>
+	<% end %>
+	</div>
