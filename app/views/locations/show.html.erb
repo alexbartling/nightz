@@ -6,7 +6,9 @@
 	<p><%= @location.city %></p>
 	<p><%= @location.number %></p>
 </div>
-<%= gmaps4rails(@json) %>
+<%= gmaps("map_options" => { "auto_zoom" => false,  "detect_location" => true, "center_on_user" => true, "zoom" => 17},"markers" => { "data" => @json }) %>
+          })
+ %>  %>
 <div>
 	<h3>Specials & Events</h3>
 	<p>Monday:<%= @location.monday %></p>
