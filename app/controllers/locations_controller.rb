@@ -1,6 +1,7 @@
 class LocationsController < ApplicationController
   def show
     @location = Location.find(params[:id])
+    @json = @location.to_gmaps4rails
   end
 
   def index

@@ -2,9 +2,11 @@
 
 <div>
 	<p><%= @location.name %></p>
+	<p><%= @location.street %></p>
+	<p><%= @location.city %></p>
 	<p><%= @location.number %></p>
 </div>
-
+<%= gmaps4rails(@json) %>
 <div>
 	<h3>Specials & Events</h3>
 	<p>Monday:<%= @location.monday %></p>
